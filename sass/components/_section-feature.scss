@@ -1,0 +1,40 @@
+.feature-list {
+    display: flex;
+}
+
+.section-feature__list {
+    margin-right: -30px;
+}
+
+.feature-list__item {
+    display: inline-block;
+    flex-basis: calc((100% - 90px) / 4);
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-list__icons {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: $bg-team-color;
+    border-radius: 4px;
+}
+
+.feature-list__title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.feature-list__text {
+    line-height: 1.71;
+}
