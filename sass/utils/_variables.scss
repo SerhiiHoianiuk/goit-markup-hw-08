@@ -30,9 +30,21 @@ p {
 }
 
 .container {
-    width: 1200px;
+    // width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+
+   @media screen and ( min-width: 480px) {
+    width: 480px;
+   }
+
+   @media screen and (min-width: 768px) {
+       width: 768px;
+   }
+
+   @media screen and (min-width: 1200px) {
+       width: 1200px;
+   }
 }
 
 body {
@@ -63,15 +75,31 @@ body {
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+                padding-bottom: 94px;
+        }
 }
 
 .section-title {
     color: $title-text-color;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
+    // font-size: 36px;
     line-height: 1.7;
     text-align: center;
-    margin-bottom: 50px;
+    letter-spacing: 0.03em;
+    // margin-bottom: 50px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+            font-size: 36px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 50px;
+        }
 }
