@@ -5,26 +5,61 @@
 }
 
 .page-footer__container {
-    display: flex;
-    align-items: baseline;
+
+    @media screen and (min-width: 768px) {
+            padding-left: 76px;
+                padding-right: 89px;
+        }
+
+        
+    @media screen and (min-width: 1200px) {
+            display: flex;
+                align-items: baseline;
+                padding-left: 0;
+                    padding-right: 0;
+        }
+}
+
+.page-footer__box {
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: baseline;
+        }
 }
 
 .address-footer__link {
     font-style: normal;
     color: $link-footer-color;
+    font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
     display: block;
+    text-align: center;
+    letter-spacing: 0.03em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &--color {
             color: $map-footer-color;
         }
 
+
+             @media screen and (min-width: 1200px) {
+             display: inline-block;
+                }
+
                 &:hover,
                 &:focus {
                     color: $accent-color;
                 }
+}
+
+.address-footer {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 0px;
+        }
 }
 
 
@@ -34,11 +69,20 @@
 
 
 .footer-wrapper {
-    margin-left: 70px;
+    @media screen and (min-width: 768px) {
+            margin-left: auto;
+        }
+
+    @media screen and (min-width: 1200px) {
+            margin-left: 70px;
+        }
+
 }
 
 .footer-social {
     display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 
 .footer-social__item {
@@ -80,15 +124,27 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.03em;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+            display: inline-block;
+        }
 }
 
 .footer-form-wrapper {
     margin-left: auto;
+    
 }
 
 .footer-form {
-    display: flex;
+    display: block;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+            display: flex;
+        }
 }
 
 .footer-form__input {
@@ -99,16 +155,23 @@
     letter-spacing: 0.03em;
     color: $primary-white-color;
 
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background: transparent;
     outline: none;
-    margin-right: 12px;
+    margin-bottom: 20px;
     padding: 15px 16px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+        margin-bottom: 0;
+        }
 
     &:focus {
             border: 1px solid $accent-color;
