@@ -192,7 +192,7 @@
         </div>
       </section>
       <!-- Наша команда -->
-      <section class="section-team section">
+      <!-- <section class="section-team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list section-team__list list">
@@ -358,7 +358,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Клієнти -->
       <section class="section-clients section">
         <div class="container">
@@ -588,15 +588,19 @@
       </div>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+      <button
+        class="menu-toggle js-close-menu aria-expanded="
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg width="40" height="40">
           <use
             class="menu-toggle__icon-cross"
-            href="./images/icons.svg#icon-menu-mobile"
+            href="./images/icons.svg#icon-burger"
           ></use>
           <use
-            class="menu-toggle__icon-menu"
-            href="./images/icons.svg#icon-close-mobile"
+            class="menu-toggle__icon-burger"
+            href="./images/icons.svg#icon-cross"
           ></use>
         </svg>
       </button>
