@@ -17,12 +17,17 @@
 
 .clients-list__item {
     list-style: none;
-    // width: 170px;
-    width: 210px;
+    
+    width: 100%;
+    // width: 210px;
     height: 92px;
     // flex-basis: calc((100% - 90px) / 4);
     // margin-right: 30px;
     flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width:480px) {
+            width: 210px;
+        }
 
     @media screen and (min-width: 768px) {
             flex-basis: calc((100% - 60px) / 3);
